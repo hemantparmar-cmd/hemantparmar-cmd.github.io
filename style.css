@@ -1,44 +1,119 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #f2f2f2;
+    background: #f4f4f4;
 }
 
-header {
-    background: #ff6b00;
+/* TOP BAR */
+.topbar {
+    background: black;
     color: white;
-    padding: 30px;
     text-align: center;
+    padding: 8px;
+    font-size: 14px;
 }
 
-.products {
+/* NAVBAR */
+.navbar {
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff6b00;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #ff6b00, #ff944d);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 44px;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
     justify-content: center;
+    gap: 20px;
     padding: 40px;
     flex-wrap: wrap;
 }
 
+.cat {
+    background: white;
+    padding: 18px 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 80px;
+}
+
 .product {
     background: white;
-    width: 260px;
     padding: 20px;
-    border-radius: 14px;
+    border-radius: 16px;
     text-align: center;
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
-.price {
-    font-size: 20px;
-    font-weight: bold;
+.product img {
+    width: 100%;
+    border-radius: 10px;
 }
 
+.price span {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 20px;
+    padding: 12px 25px;
     background: #25D366;
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
 }
