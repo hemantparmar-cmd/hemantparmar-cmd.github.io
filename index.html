@@ -1,66 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Home | Kitchen Containers Store</title>
-<link rel="stylesheet" href="style.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-
-<header>
-<div class="logo">KitchenStore</div>
 <nav>
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="categories.html">Categories</a>
-<a href="contact.html">Contact</a>
+  <h1>My Store</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
-</header>
 
-
-<section class="hero">
-<h1>Premium Kitchen Storage Containers</h1>
-<p>Durable • Airtight • BPA Free</p>
-<a class="btn" href="products.html">Shop Now</a>
-</section>
-
-
-<section class="products">
-<h2>Popular Products</h2>
-
-
-<div class="grid">
-<div class="card">
-<img src="images/p1.jpg">
-<h3>Airtight Container Set</h3>
-<p>₹899</p>
-<a href="product.html" class="btn">View</a>
+<div class="hero">
+  Premium Kitchen Products
 </div>
 
-
-<div class="card">
-<img src="images/p2.jpg">
-<h3>Plastic Storage Box</h3>
-<p>₹499</p>
-<a href="product.html" class="btn">View</a>
+<div class="container">
+  <h2>Featured Products</h2>
+  <div id="product-list" class="products"></div>
 </div>
-
-
-<div class="card">
-<img src="images/p3.jpg">
-<h3>Glass Jar Combo</h3>
-<p>₹1299</p>
-<a href="product.html" class="btn">View</a>
-</div>
-</div>
-</section>
-
 
 <footer>
-© 2026 Kitchen Containers Store
+  © 2026 My Store
 </footer>
 
-
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
