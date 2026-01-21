@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+header {
+    background: #ff6b00;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
